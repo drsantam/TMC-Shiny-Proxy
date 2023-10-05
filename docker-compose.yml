@@ -12,8 +12,6 @@ services:
       - "8082:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
-    extra_hosts:
-      - "dockerhost:172.17.0.1"  # To allow ShinyProxy to connect to Docker daemon
 
 networks:
   tmcshinyproxy_network:
